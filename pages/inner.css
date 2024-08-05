@@ -371,35 +371,33 @@ margin-right: 4px;
   bottom: 0;
   height: 10px;
 }
-@media (max-width: 1300px){
-  form{
-    top: 50%;
-  }
-}
+
 
 /*--- NGO and COMMUNITIES---*/
 
-.inner-section{
+.inner-section {
   background-color: #003400;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: auto;
+  padding: 2rem;
   width: 80%;
-  margin:100px auto;
+  margin: 100px auto;
   border-radius: 25px;
 }
-.main-box{
+
+.main-box {
   display: flex;
   flex-direction: column;
   padding: 2rem;
 }
 
-.inner-section h3{
+.inner-section h3 {
   font-size: 2.5rem;
   color: #fc0;
 }
-.inner-box{
+
+.inner-box {
   background-color: #a89c85;
   margin: 1rem;
   font-size: 1.3rem;
@@ -409,33 +407,110 @@ margin-right: 4px;
   color: #003400;
 }
 
-.inner-box a{
+.inner-box a {
   text-decoration: none;
   color: #003400;
 }
-.inner-box img{
+
+.inner-box img {
   border-radius: 25px;
 }
-.inner-box-link{
+
+.inner-box-link {
   text-align: center;
-  padding: auto;
+  padding: 1rem;
   margin: 1.2rem;
   font-size: 2rem;
 }
 
-.inner-box .donate{
+.inner-box .donate {
   font-weight: 800;
   font-size: 40px;
   background-color: #fc0;
   border-radius: 20px;
   padding: 1rem;
 }
-.donate:hover{
+
+.donate:hover {
   background-color: #003400;
+  color: #fc0;
 }
 
-.inner-box a:hover{
+.inner-box a:hover {
   color: #fc0;
+}
+
+/* Responsive styles */
+@media (max-width: 1300px) {
+  .inner-section {
+    width: 90%;
+    margin: 100px auto;
+    padding: 1rem;
+  }
+
+  .main-box {
+    padding: 1rem;
+  }
+
+  .inner-section h3 {
+    font-size: 2rem;
+  }
+
+  .inner-box {
+    padding: 2rem;
+    font-size: 1.1rem;
+  }
+
+  .inner-box-link {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+
+  .inner-box .donate {
+    font-size: 30px;
+    padding: 0.5rem;
+  }
+
+  .inner-box img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner-section {
+    width: 95%;
+    margin: 25px auto;
+    padding: 0.5rem;
+  }
+
+  .main-box {
+    padding: 0.5rem;
+  }
+
+  .inner-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .inner-box {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .inner-box-link {
+    font-size: 1.2rem;
+    margin: 0.5rem;
+  }
+
+  .inner-box .donate {
+    font-size: 25px;
+    padding: 0.5rem;
+  }
+
+  .inner-box img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /*-- about--*/
