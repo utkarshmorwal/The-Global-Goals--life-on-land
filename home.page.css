@@ -1,0 +1,267 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#a89c85;
+}
+.header {
+  background-color: #003400;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  top: 0px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.logo {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: larger;
+  width: fit-content;
+  left: 3rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.list li {
+  margin-left: 2rem;
+}
+
+nav a {
+  color: #fc0;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: large;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+#checkbtn {
+  line-height: 70px;
+  font-size: 30px;
+  color: #fc0;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ ul {
+  top: 70px;
+  left: 0;
+}
+
+@media (max-width: 1300px) {
+  #checkbtn {
+    display: block;
+    right: 10px;
+    position: absolute;
+    top: 7px;
+  }
+  .navbar{
+    display: block;
+    
+  }
+  .logo{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .list {
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    height: fit-content;
+    background-color: #003400;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    transition: 1s;
+  }
+
+  .list li {
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+  }
+}
+
+nav a:hover {
+  color: rgb(255, 255, 255);
+}
+
+
+.detail-about-page{
+  position: relative;
+  background-color:rgba(255, 255, 255, 0.644);
+  backdrop-filter: blur(10px);
+  width: 90%;
+  align-content: center;
+  height:fit-content;
+  padding: 30px ;
+  margin: 30px auto;
+  border-radius: 35px ;
+  align-items: center;
+  top: 90px;
+  font-size: 20px;
+}
+.detail-about-page h1{
+  text-align: center;
+  color: #003400;
+  font-weight: 700;
+}
+.sub-heading{
+  background-color: #003400;
+  color: #fc0;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 800;
+  display: block;
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  padding: 20px ;
+  top: 90px;
+}
+.life-on-land{
+  width: 90%;
+  margin: 5%;
+}
+
+.big-container{ 
+  position: relative;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  top: 150px;
+}
+
+.container{
+  display: block;
+  background-color:rgba(255, 255, 255, 0.644);
+  backdrop-filter: blur(10px);
+  max-width: 25%;
+  height:auto;
+  font-size: 1.4rem;
+  padding: 20px 10px 20px 10px ;
+  margin: 10px 20px;
+  border-radius: 35px ;
+  text-decoration: none;
+  color: #000000;
+}
+.details{
+  padding: 0 10px;
+}
+.image{
+  width: 90%;
+  margin: 10%;
+}
+.img{
+  height: 90%;
+  width: 90%;
+  border-radius: 30px;
+}
+
+footer{
+  position: absolute;
+  text-align: center;
+    height: 50px;
+    background-color: #003400;
+    color:#fc0 ;
+    left: 0px;
+    right: 0px;
+    margin-top: 150px;
+    padding-bottom: 50px;
+}
+footer a{
+  text-decoration: none;
+  color: #fc0;
+}
+
+.more-info {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+.chevron-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #003400;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+.chevron-icon {
+  
+  font-size: 20px;
+}
+
+.container:hover .chevron-icon-container {
+  background-color: green; 
+  color: #003400;
+}
+
+footer a{
+  text-transform: uppercase;
+  font-weight: 800;
+}
+/*details*/
+
+.section-details{
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  margin: 20px ;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.section-details p{
+  text-align: left;
+  font-size: 1.2rem;
+}
+.section-details ol{
+  
+  text-align: left;
+}
+.section-details h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+
+.carousel-item img{
+  height: 50%;
+  height: auto;
+  width:auto;
+}
+
+
