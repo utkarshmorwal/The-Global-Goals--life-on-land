@@ -519,13 +519,12 @@ margin-right: 4px;
 }
 
 .about {
-  top: 4000px;
   color: white;
   margin-top: 20px;
   padding: 1rem;
   background: #003400;
   border-radius: 25px;
-  animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+  animation: fadeIn 1s ease-in-out;
 }
 
 .intro {
@@ -536,7 +535,7 @@ margin-right: 4px;
   font-weight: 500px;
   border: solid black;
   border-radius: 25px;
-  animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+  animation: fadeIn 1s ease-in-out;
 }
 
 .container-center {
@@ -557,9 +556,9 @@ margin-right: 4px;
 }
 
 .col {
-  background-color:#a89c85;
+  background-color: #a89c85;
   margin: 1rem;
-  flex: 1 1 calc(33% - 2rem); /* Adjust the width of columns */
+  flex: 1 1 calc(33% - 2rem);
   box-sizing: border-box;
   border-radius: 25px;
 }
@@ -572,33 +571,155 @@ margin-right: 4px;
 .card:hover {
   transform: scale(1.05);
 }
-.card button{
+
+.card button {
   background-color: #003400;
 }
-.card-title{
+
+.card-title {
   color: #fc0;
   font-size: 2rem;
   text-align: center;
   font-weight: 900;
 }
+
 /* Custom styles for Bootstrap popover */
 .popover {
   background-color: #013501a9;
   padding: 2rem !important;
   border-radius: 25px;
   width: 70%;
-  
 }
+
 .popover-header {
   padding: 2rem !important;
   text-align: center;
   font-size: 2rem;
-  padding: 0;
-  margin: 0;
   color: #fc0;
 }
+
 .popover-body {
   padding: 2rem !important;
   color: white;
   font-size: 1.3rem;
+}
+
+/* Responsive styles */
+@media (max-width: 1300px) {
+  
+  .wrapper {
+    margin: 50px 1.5rem;
+  }
+
+  .about {
+    padding: 0.5rem;
+  }
+
+  .intro {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .container-center {
+    padding: 2rem;
+  }
+
+  .col {
+    flex: 1 1 calc(50% - 2rem);
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .popover {
+    width: 80%;
+  }
+
+  .popover-header {
+    font-size: 1.5rem;
+  }
+
+  .popover-body {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    margin: 25px 1rem;
+  }
+
+  .about {
+    padding: 0.5rem;
+  }
+
+  .intro {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .container-center {
+    padding: 1rem;
+  }
+
+  .col {
+    flex: 1 1 100%;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .popover {
+    width: 90%;
+  }
+
+  .popover-header {
+    font-size: 1.2rem;
+  }
+
+  .popover-body {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    margin: 100px 0.5rem;
+    
+  }
+
+  .about {
+    padding: 0.5rem;
+  }
+
+  .intro {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .container-center {
+    padding: 0.5rem;
+  }
+
+  .col {
+    flex: 1 1 100%;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .popover {
+    width: 80%;
+  }
+
+  .popover-header {
+    font-size: 1rem;
+  }
+
+  .popover-body {
+    font-size: 0.8rem;
+  }
 }
