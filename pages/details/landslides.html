@@ -173,8 +173,24 @@
             <p>Landslides pose significant risks to the environment, economy, and human safety, necessitating a comprehensive approach to management and prevention. Effective mitigation requires a combination of strategic land use planning, robust engineering solutions, and proactive soil and vegetation management. Implementing advanced monitoring and early warning systems can help predict and manage landslides, while community education and preparedness ensure that local populations are equipped to handle potential emergencies. Furthermore, strong policy enforcement and government support are crucial for sustaining long-term landslide mitigation efforts. By integrating these strategies, we can better safeguard communities, reduce economic losses, and protect the natural landscape from the devastating effects of landslides.</p>
         </section>
     </main>
-    <footer>
-      this is footer
+    <footer >
+      <p>&copy; 2024 Life on Land. All rights reserved.</p>
+      <a href="#" id="back-to-top" >Back to Top</a>
+      
     </footer>
+    <script>
+      document.getElementById('back-to-top').addEventListener('click', function(event) {
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
+      
+      <script>
+        // JavaScript to toggle mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>

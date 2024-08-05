@@ -254,8 +254,24 @@
                 </p>
         </section>
     </main>
-    <footer>
-      this is footer
-    </footer>
+    <footer >
+        <p>&copy; 2024 Life on Land. All rights reserved.</p>
+        <a href="#" id="back-to-top" >Back to Top</a>
+        
+      </footer>
+      <script>
+        document.getElementById('back-to-top').addEventListener('click', function(event) {
+          event.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      </script>
+        
+        <script>
+          // JavaScript to toggle mobile menu
+          document.getElementById('menu-toggle').addEventListener('click', function() {
+              var mobileMenu = document.getElementById('mobile-menu');
+              mobileMenu.classList.toggle('hidden');
+          });
+      </script>
 </body>
 </html>
