@@ -206,7 +206,7 @@ footer a{
   font-weight: bold;
   margin-left: 10px;
   text-decoration: none;
-  color: black;
+  color: #003400;
 }
 .chevron-icon-container {
   display: flex;
@@ -214,7 +214,7 @@ footer a{
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: #003400;
+  background-color: #fc0;
   border-radius: 50%;
   transition: background-color 0.3s;
   margin-left: 10px;
@@ -226,8 +226,8 @@ footer a{
 }
 
 .container:hover .chevron-icon-container {
-  background-color: green; 
-  color: #003400;
+  background-color: #003400; 
+  color: #fc0;
 }
 
 footer a{
@@ -238,30 +238,35 @@ footer a{
 
 .section-details{
   text-align: center;
-  background-color: white;
-  padding: 20px;
-  margin: 20px ;
+  background-color: #003400;
+  padding: 2rem;
+  margin: 4rem ;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .section-details p{
   text-align: left;
   font-size: 1.2rem;
+  color: white;
+}
+.section-details ol{
+  color: white;
 }
 .section-details ol{
   
   text-align: left;
 }
-.section-details h2 {
+.section-details h2{
   text-align: center;
   font-size: 3rem;
+  color: #fc0;
+}
+.section-details h3{
+  color: #fc0;
+}
+.section-details img{
+  max-height: 400px;
 }
 
-
-.carousel-item img{
-  height: 50%;
-  height: auto;
-  width:auto;
-}
 
 
